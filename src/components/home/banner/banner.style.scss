@@ -1,0 +1,67 @@
+
+section.banner{
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1100px;
+    background-position: center;
+    .content-wrapper{
+        margin-top: 20%;
+        div.banner-heading-wrapper{
+            @keyframes slidein-left {
+                from {
+                    margin-left: -100%;
+                    width: 300%;
+                }
+                to {
+                    margin-left: 0%;
+                    width: 100%;
+                }
+            }
+                        
+            animation-duration: 1s;
+            animation-name: slidein-left;
+            h1{
+                font-size: 6rem;
+                margin-bottom: 4.9rem;
+                color: #fff;
+                &::before{
+                    content: "";
+                    position: relative;
+                    top: 14px;
+                    /* left: 7px; */
+                    display: block;
+                    width: 150px;
+                    height: 10px;
+                    margin-bottom: 1rem;
+                    background-color: #c29f15;
+                    transition: background-color 0.3s;
+                }
+            }
+            h5{
+                a{
+                    margin-right: 2rem;
+                    margin-bottom: 0;
+                    border-color: #1a91dd;
+                    background-color: #1a91dd;
+                    color: #fff;
+                    padding: 1.3rem 6rem;
+                    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+                    vertical-align: middle;
+                    border: 1px solid transparent;
+                    line-height: 1.5;
+                    text-align: center;
+                    text-decoration: none;
+                    cursor: pointer;
+                    border-radius: 0;
+                    font-weight: 700;
+                    font-size: 22px;
+                    &:hover {
+                        border-color: #1776b1;
+                        background-color: #1776b1;
+                    }
+                }
+            }
+        }
+        
+    }
+}

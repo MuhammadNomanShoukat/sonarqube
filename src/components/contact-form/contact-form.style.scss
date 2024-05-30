@@ -1,0 +1,75 @@
+@keyframes slidein-right {
+    from {
+      margin-left: 100%;
+      width: 100%;
+    }
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+}
+.contact-form-wrapper{
+    
+    padding: 4rem;
+    background-color: #fff;
+    min-height:400px;
+    animation-duration: 1s;
+    animation-name: slidein-right;
+    h5{
+        margin-bottom: 3.8rem;
+        font-size: 30px;
+        line-height: 1.2;
+        font-weight: 700;
+    }
+    form{
+        input[name=name], 
+        input[name=phone], 
+        input[name=email]{
+            border-radius: 0;
+            background-color: #eef0f3 !important;
+            color: #000;
+            font-weight: 400;
+            font-size: 16px;
+            padding: 15px;
+            &:focus{
+                box-shadow: unset;
+                border-color: #000;
+                border-left: 3px solid #000;
+            }
+        }
+
+        .term-and-condition{
+            text-decoration: none;
+            color:#1a91dd;
+        }
+
+        input[name=terms], 
+        input[name=tips]{
+            
+            &:focus{
+                box-shadow: unset;
+                // border-color: #000;
+                // border-left: 3px solid #000;
+            }
+        }
+        .form-check-input:checked {
+            border-color: #1a91dd;
+            background-color: #1a91dd;
+        }
+        button[type=submit]{
+            border-color: #1a91dd;
+            background-color: #1a91dd;
+            color: #fff;
+            padding: 1rem 3rem;
+            cursor: pointer;
+            border-radius: 0;
+            font-weight: 700;
+            font-size: 20px;
+            width: 100%;
+            &:hover {
+                border-color: #1776b1;
+                background-color: #1776b1;
+            }
+        }
+    }
+}

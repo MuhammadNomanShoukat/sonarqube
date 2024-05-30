@@ -1,0 +1,53 @@
+.to-word{
+    margin: 100px 0px;
+    background-position: center;
+    background-size: cover;
+    .content-wrapper{
+        min-height: 650px;
+        display: flex;
+        align-items: center;
+        .towork-heading-wrapper{
+            h1{
+                font-size: 4rem;
+                margin-bottom: 4.9rem;
+                color: #fff;
+                &::before{
+                    content: "";
+                    position: relative;
+                    top: 14px;
+                    /* left: 7px; */
+                    display: block;
+                    width: 150px;
+                    height: 10px;
+                    margin-bottom: 1rem;
+                    background-color: #c29f15;
+                    transition: background-color 0.3s;
+                }
+            }
+        }
+        .towork-info-wrapper{
+            text-align: center;
+            svg{
+                color: #c29f15;
+                font-size: 60px;
+                margin-bottom: 15px;
+            }
+            h3{
+                font-size: 3.6rem;
+                color:#fff;
+                svg{
+                    color: #fff;
+                    font-size: 55px;
+                    margin-bottom: 0px;
+                }
+            }
+            p{
+                color: #fff;
+                line-height: 1.2;
+                font-size: 20px;
+                font-weight: 500;
+            }
+        }
+
+    }
+}

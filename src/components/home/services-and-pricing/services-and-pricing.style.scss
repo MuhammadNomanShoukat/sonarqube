@@ -1,0 +1,81 @@
+// @keyframes slidein-right {
+//     from {
+//       margin-left: 25%;
+//       width: 25%;
+//     }
+//     to {
+//       margin-left: -25%;
+//       width: 55%;
+//     }
+// }
+
+
+
+.services-and-pricing{
+    h1, h2, h2{
+        margin:0px
+    }
+    .services-box{
+        svg{
+            font-size: 30px;
+        }
+        position: relative;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        background-color: #000;
+
+        &:hover{
+            
+            
+            .left-link{
+                position: relative;
+                display: block !important;
+                background: #c29f15;
+                width: 25%;
+                position: absolute;
+                top: 0;
+                height: 205px;
+                overflow: hidden;
+                right: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                // animation-duration: 4s;
+                // animation-name: slidein-right;
+                svg{
+                    position: absolute;
+                    top: 35%;
+                    left: 50%;
+                    transform: translate(-50%, 50%);
+                    // color:#c29f15;
+                }
+            }
+        }
+
+        .left-link{
+            
+
+            &:hover{
+                display: block !important;
+                
+            }
+        }
+        a{
+            text-decoration: none;
+            color:#fff;
+            .content{
+                
+                
+                padding: 20px 58px;
+                .heading{
+                    h1{
+                        font-size: 75px;
+                    }   
+                    h3{}
+                }
+                
+            }   
+            
+        }
+    }   
+}
